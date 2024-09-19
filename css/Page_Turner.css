@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0%;
+}
+
+#title-page {
+    background-color: rgb(37, 69, 86);
+    padding-top: 155px;
+    font-size: 50px;
+    padding-bottom: 30px;
+    margin-top: -110px;
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+
+}
+
+.body-div {
+    padding-top: 10px;
+    background-image: url(../book.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    margin-bottom: -50px;
+}
+
+.nav {
+    background-color: rgba(37, 69, 86, 0.721);
+    width: 100%;
+    padding: 50px;
+    position: fixed;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition-duration: .5s;
+
+
+}
+
+.nav:hover {
+    background-color: rgb(37, 69, 86);
+}
+
+.header {
+    padding-top: 100px;
+
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.nav ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav ul li {
+    padding: 10px;
+}
+
+#contant {
+    order: 6;
+}
+
+#sign-in {
+    order: 3;
+}
+
+#sign-up {
+    order: 4;
+}
+
+.logo {
+    position: absolute;
+    left: 85%;
+    top: 20px;
+    margin: 0px;
+}
+
+.logo,
+.link {
+    background-color: white;
+    border: solid 3px rgb(235, 152, 43);
+    border-radius: 30px;
+    padding-top: 10px;
+    padding: 10PX;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(235, 152, 43);
+    transition-duration: .2s;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+    padding: 20px;
+    margin: 5px;
+}
+
+a:visited {
+    color: blue;
+}
+
+.clear {
+    clear: both;
+}
+
+.section {
+    padding: 50px;
+    margin: 50px;
+}
+
+.section-header {
+    background-color: rgba(0, 0, 0, 0.53);
+    text-align: center;
+    width: 100%;
+    margin: 20 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.section-header::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.598);
+    width: 10px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+}
+
+.section-header,
+.book-name {
+    color: white;
+    text-align: center;
+
+}
+
+.part {
+    background-color: rgb(37, 69, 86);
+    display: inline-block;
+    padding: 80px;
+    margin: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition-duration: .5s;
+}
+
+.part:hover {
+    padding: 110px;
+    margin: 35px;
+    box-shadow: 4px 3px 23px 2px black;
+}
+
+.part img {
+    width: 150px;
+    height: 250px;
+}
+
+.fiction,
+.science {
+    width: 300px;
+    float: left;
+    width: calc(97% / 2);
+    margin-left: 1%;
+}
+
+.without-photo {}
+
+
+.book-name {
+    background-color: #607D8B;
+    font-style: bold;
+    padding: 15px 0px;
+    color: #ffffff;
+    margin-left: 47px;
+    border-radius: 30px;
+    margin-right: 47px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.cost {
+    font-size: 30px;
+    background-color: rgba(255, 0, 0, 0.616);
+    color: white;
+    padding: 3%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.description {
+    background-color: rgb(235, 152, 43);
+    padding: 10px;
+    margin: 20px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 100px;
+    overflow: auto;
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+.description::before {
+    content: "description: ";
+    color: rgb(255, 255, 255);
+
+}
+
+.description:hover {
+    box-shadow: 4px 3px 23px 2px black;
+    margin: 25px;
+
+
+}
+
+
+.button-Buy {
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgb(235, 152, 43);
+    color: rgb(235, 152, 43);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 4px 3px 23px 2px black;
+    transition-duration: .5s;
+}
+
+.button-Buy:focus {
+    color: rgba(89, 0, 255, 0.785);
+    border: 1px solid rgba(89, 0, 255, 0.785);
+    outline: none;
+}
+
+.button-Buy:hover {
+    padding: 15px;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 3px;
+    background-color: rgb(37, 69, 86);
+}
+
+#Contact {
+    padding: 10px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.con1 {
+    position: relative;
+    bottom: 50px;
+    left: 300px;
+}
+
+.whats {
+    padding: 10px;
+    margin: 30 0px;
+    color: white;
+    font-size: 25px;
+}
